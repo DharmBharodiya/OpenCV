@@ -11,8 +11,8 @@ def rescaleImage(image, scale=0.75):
     return cv.resize(image, dimension, interpolation=cv.INTER_AREA)
 
 resized_image = rescaleImage(img, 0.5)
-cv.imshow('First Image', img)
-cv.imshow('Resized Image', resized_image)
+# cv.imshow('First Image', img)
+# cv.imshow('Resized Image', resized_image)
 
 cv.waitKey(0)
-cv.destroyAllWindows()
+# cv.destroyAllWindows()
