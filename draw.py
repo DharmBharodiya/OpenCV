@@ -28,6 +28,20 @@ blank = np.zeros((500,500,3), dtype="uint8") # the 3 here means the number of ch
 cv.rectangle(blank, (0,0), (blank.shape[1]//2, blank.shape[0]//2),  (0,255,0), thickness=-1)
 cv.imshow('Rectangle', blank)
 
+
+
+# 3. Draw a circle
+cv.circle(blank, (blank.shape[1]//2, blank.shape[0]//2), 40, (0,0,255), thickness=4) # here the 40 is the radius of the circle
+cv.imshow('Circle', blank)
+
+
+#4. Draw a line
+cv.line(blank, (blank.shape[1],0), (blank.shape[1]//2, blank.shape[0]//2), (255,255,255), thickness=3)
+cv.imshow('Line', blank)
+
+
+
+
 # img =cv.imread('images/second.jpg')
 
 # cv.imshow('Second Image', img)
