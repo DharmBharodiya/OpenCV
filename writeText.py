@@ -9,6 +9,7 @@ import numpy as np
 
 img = cv.imread("images/fourth.jpg")
 cv.putText(img, "Dharm", (255,255), cv.FONT_ITALIC, 1.0, (255, 255,255), 1)
+# sequence of args --> destination, location, fontspace, fontsizee, color, thickness
 cv.imshow("Txt on image", img)
 
 cv.waitKey(0)
